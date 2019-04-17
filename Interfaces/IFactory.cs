@@ -1,5 +1,5 @@
 namespace PennyPacker.Interfaces {
-    public interface IFactory {
-        void HireEmployee ();
+    public interface IFactory<T> {
+        void HireEmployee (T worker);
     }
 }
