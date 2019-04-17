@@ -1,4 +1,6 @@
 ﻿using System;
+using PennyPacker.Models.Factories;
+using PennyPacker.Models.Workers;
 
 namespace PennyPacker
 {
@@ -6,7 +8,21 @@ namespace PennyPacker
     {
         static void Main(string[] args)
         {
-            TaffyFactory candy = new TaffyFactory();
+            TaffyFactory kandyKorner = new TaffyFactory();
+            kandyKorner.HireEmployee();
+
+
+            SteelFactory erieSteel = new SteelFactory();
+
+
+            InsulinFactory johnsonChemical = new InsulinFactory();
+
+
+            NuggetFactory flemingFoods = new NuggetFactory();
+
+
+            CarFactory acmeAutos = new CarFactory();
+
         }
     }
 }
